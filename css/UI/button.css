@@ -1,0 +1,12 @@
+.button {
+    font-family: "TT Firs Neue Trial Var Roman";
+    background: var(--red);
+    color: #FFFFFF;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    display: block;
+}

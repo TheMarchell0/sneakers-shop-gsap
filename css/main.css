@@ -1,0 +1,103 @@
+/*Common styles*/
+@import "fonts.css";
+@import "vendor/normalize.css";
+@import "vendor/variables.css";
+
+/*UI styles*/
+@import "UI/button.css";
+@import "UI/input.css";
+
+/*Main page styles*/
+@import "pages/main/hero.css";
+@import "pages/main/description.css";
+@import "pages/main/models.css";
+@import "pages/main/top-sales.css";
+@import "pages/main/discount.css";
+@import "pages/main/reviews.css";
+@import "pages/main/feedback.css";
+
+
+* {
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
+}
+
+section {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+img {
+    pointer-events: none;
+}
+
+.absolute-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    white-space: nowrap !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+.container {
+    padding: 0 65px;
+}
+
+.section-title,
+.section-subtitle {
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 40px;
+    color: #000000;
+}
+
+.section-subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    color: #504e4a;
+}
