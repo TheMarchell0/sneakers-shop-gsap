@@ -1,6 +1,5 @@
 export function createAnchorsFunctional() {
     const anchorLinks = document.querySelectorAll('.js-anchor');
-    const headerHeight = document.querySelector('.js-header').offsetHeight;
 
     anchorLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
@@ -10,7 +9,7 @@ export function createAnchorsFunctional() {
             if (targetElement) {
                 const topOffset = targetElement.offsetTop;
                 window.scrollTo({
-                    top: topOffset-headerHeight-20,
+                    top: topOffset,
                     behavior: 'smooth'
                 });
             }

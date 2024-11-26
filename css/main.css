@@ -2,6 +2,8 @@
 @import "fonts.css";
 @import "vendor/normalize.css";
 @import "vendor/variables.css";
+@import "components/header.css";
+@import "components/footer.css";
 
 /*UI styles*/
 @import "UI/button.css";
@@ -53,6 +55,10 @@ a {
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+}
+
+a:hover {
+    filter: opacity(0.6);
 }
 
 img {

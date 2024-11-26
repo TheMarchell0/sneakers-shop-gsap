@@ -2,34 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e8c4abc-db76-46b8-8d0d-fd31d451308f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/UI/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/UI/input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/discount.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/feedback.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/hero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/models.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/reviews.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/pages/main/top-sales.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/vendor/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/vendor/variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/Montserrat/Montserrat-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/functions/createFormValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/components/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/UI/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/functions/createAnchorsFunctional.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createAnchorsFunctional.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +40,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/sneakers-shop-gsap/js/functions",
+    "last_opened_file_path": "D:/Work/chukotka-rating",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\sneakers-shop-gsap\images" />
       <recent name="D:\Work\sneakers-shop-gsap\js\functions" />
       <recent name="D:\Work\sneakers-shop-gsap\fonts\Montserrat" />
       <recent name="D:\Work\sneakers-shop-gsap\css\vendor" />
@@ -73,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732522167983</updated>
       <workItem from="1732522169340" duration="16000" />
-      <workItem from="1732647078505" duration="2660000" />
+      <workItem from="1732647078505" duration="4210000" />
     </task>
     <servers />
   </component>
