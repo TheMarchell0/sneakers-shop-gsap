@@ -4,8 +4,8 @@ export function createAnchorsFunctional() {
     anchorLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const href = link.getAttribute('href');
-            const targetElement = document.getElementById(href.slice(1));
+            const href = link.getAttribute('anchor-to');
+            const targetElement = document.querySelector(`#${href}`);
             if (targetElement) {
                 const topOffset = targetElement.offsetTop;
                 window.scrollTo({

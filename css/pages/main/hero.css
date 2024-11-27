@@ -1,3 +1,36 @@
 .hero {
     background-color: #E7E8E9;
 }
+
+.hero__content {
+    max-width: 662px;
+    width: 100%;
+    padding: 171px 0 284px;
+    margin: 0 0 10px 137px;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.hero__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--gray);
+    margin: 43px 0 63px;
+    max-width: 92%;
+    line-height: 1.2;
+}
+
+.hero__button {
+    padding: 20px 44px;
+}
+
+.hero__img {
+    position: absolute;
+    top: 130px;
+    right: 199px;
+}

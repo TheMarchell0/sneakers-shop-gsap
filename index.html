@@ -31,7 +31,7 @@
             <p class="hero__subtitle">Best Shop - это кроссовки, созданные с учетом последних трендов, которые подарят
                 вам не только комфорт, но и уверенность в каждом шаге. Легкость и стиль — идеальное сочетание для
                 активной жизни!</p>
-            <button class="hero__button button">Смотреть каталог</button>
+            <button class="hero__button button js-anchor" anchor-to="top-sales">Смотреть каталог</button>
         </div>
         <picture>
             <source
@@ -48,37 +48,314 @@
 </section>
 <section class="description">
     <div class="description__container container">
-
+        <div class="description__content">
+            <div class="description__content-item">
+                <div class="description__avatar">
+                    <picture>
+                        <source
+                                srcset="images/description-img.png 1x, ../images/description-img@2x.png 2x"
+                        />
+                        <img
+                                src="images/description-img.png"
+                                alt="Фотография"
+                                width="80"
+                                class="description__avatar-img"
+                        />
+                    </picture>
+                    <div class="description__avatar-text">
+                        <p class="description__avatar-text-title">Иванова Мария</p>
+                        <p class="description__avatar-text-subtitle">Директор по продажам</p>
+                    </div>
+                </div>
+                <h2 class="description__title">Создайте свой неповторимый стиль с нашими кроссовками!</h2>
+                <p class="description__subtitle">Наша коллекция сочетает в себе элегантный дизайн и высококачественные
+                    материалы, что делает их идеальными как для повседневной носки, так и для активных тренировок.</p>
+                <p class="description__subtitle">Преобразите свои шаги с нашими кроссовками — это не просто обувь, это
+                    ваше выражение индивидуальности!</p>
+            </div>
+            <div class="description__content-item">
+                <picture>
+                    <source
+                            srcset="images/description-bg.png 1x, ../images/description-bg@2x.png 2x"
+                    />
+                    <img
+                            src="images/description-bg.png"
+                            alt="Задний фон"
+                            class="description__bg absolute-pos"
+                    />
+                </picture>
+                <h2 class="description__title white">Скидка 25 %!</h2>
+                <p class="description__subtitle white">Не упустите шанс обновить свой гардероб по&nbsp;выгодной цене!</p>
+                <button class="description__button button js-anchor" anchor-to="feedback">Получить скидку</button>
+            </div>
+        </div>
     </div>
 </section>
 <section class="models">
     <div class="models__container container">
-
+        <h2 class="models__title section-title">Модели кроссовок</h2>
+        <p class="models__subtitle section-subtitle">Откройте для себя идеальные кроссовки для любого стиля жизни!</p>
+        <ul class="models__list">
+            <li class="models__list-item">
+                <h3 class="models__list-title">Беговые</h3>
+                <p class="models__list-subtitle">Легкие и амортизирующие, они помогут вам преодолеть любые дистанции,
+                    сохраняя ваши ноги в отличной форме.</p>
+                <picture>
+                    <source
+                            srcset="images/models-bg-1.png 1x, ../images/models-bg-1@2x.png 2x"
+                    />
+                    <img
+                            src="images/models-bg-1.png"
+                            alt="Задний фон"
+                            class="models__list-bg absolute-pos"
+                    />
+                </picture>
+            </li>
+            <li class="models__list-item">
+                <h3 class="models__list-title">Спортивные</h3>
+                <p class="models__list-subtitle">Подойдут для различных видов спорта и тренировок, обеспечивая отличную
+                    поддержку и стабильность.</p>
+                <picture>
+                    <source
+                            srcset="images/models-bg-2.png 1x, ../images/models-bg-2@2x.png 2x"
+                    />
+                    <img
+                            src="images/models-bg-2.png"
+                            alt="Задний фон"
+                            class="models__list-bg absolute-pos"
+                    />
+                </picture>
+            </li>
+            <li class="models__list-item">
+                <h3 class="models__list-title">Для туризма</h3>
+                <p class="models__list-subtitle">Обеспечивают отличную поддержку голеностопа и имеют прочную подошву,
+                    которая справляется с любыми препятствиями.</p>
+                <picture>
+                    <source
+                            srcset="images/models-bg-3.png 1x, ../images/models-bg-3@2x.png 2x"
+                    />
+                    <img
+                            src="images/models-bg-3.png"
+                            alt="Задний фон"
+                            class="models__list-bg absolute-pos"
+                    />
+                </picture>
+            </li>
+            <li class="models__list-item">
+                <h3 class="models__list-title">Для отдыха</h3>
+                <p class="models__list-subtitle">Мягкая стелька и легкий материал обеспечивают максимальный комфорт, а
+                    разнообразие дизайнов позволяет каждому найти своё.</p>
+                <picture>
+                    <source
+                            srcset="images/models-bg-4.png 1x, ../images/models-bg-4@2x.png 2x"
+                    />
+                    <img
+                            src="images/models-bg-4.png"
+                            alt="Задний фон"
+                            class="models__list-bg absolute-pos"
+                    />
+                </picture>
+            </li>
+        </ul>
     </div>
 </section>
-<section class="top-sales">
+<section class="top-sales" id="top-sales">
     <div class="top-sales__container container">
-
+        <h2 class="top-sales__title section-title">Топ продаж</h2>
+        <p class="top-sales__subtitle section-subtitle">Выберите свою идеальную пару из нашего эксклюзивного
+            ассортимента!</p>
+        <ul class="top-sales__list">
+            <li class="top-sales__list-item sales">
+                <div class="top-sales__list-img-wrapper">
+                    <picture>
+                        <source
+                                srcset="images/top-sales-img-1.png 1x, ../images/top-sales-img-1@2x.png 2x"
+                        />
+                        <img
+                                src="images/top-sales-img-1.png"
+                                alt="Фотография модели кроссовок"
+                                width="296"
+                                class="top-sales__list-img"
+                        />
+                    </picture>
+                </div>
+                <h3 class="top-sales__list-title">Running Dreams</h3>
+                <p class="top-sales__list-price">10.000 ₽</p>
+                <button class="top-sales__list-button button js-anchor" anchor-to="feedback">Купить</button>
+            </li>
+            <li class="top-sales__list-item sales">
+                <div class="top-sales__list-img-wrapper">
+                    <picture>
+                        <source
+                                srcset="images/top-sales-img-2.png 1x, ../images/top-sales-img-2@2x.png 2x"
+                        />
+                        <img
+                                src="images/top-sales-img-2.png"
+                                alt="Фотография модели кроссовок"
+                                width="296"
+                                class="top-sales__list-img"
+                        />
+                    </picture>
+                </div>
+                <h3 class="top-sales__list-title">Peak Sports</h3>
+                <p class="top-sales__list-price">20.000 ₽</p>
+                <button class="top-sales__list-button button js-anchor" anchor-to="feedback">Купить</button>
+            </li>
+            <li class="top-sales__list-item sales">
+                <div class="top-sales__list-img-wrapper">
+                    <picture>
+                        <source
+                                srcset="images/top-sales-img-3.png 1x, ../images/top-sales-img-3@2x.png 2x"
+                        />
+                        <img
+                                src="images/top-sales-img-3.png"
+                                alt="Фотография модели кроссовок"
+                                width="296"
+                                class="top-sales__list-img"
+                        />
+                    </picture>
+                </div>
+                <h3 class="top-sales__list-title">Urban Style </h3>
+                <p class="top-sales__list-price">30.000 ₽</p>
+                <button class="top-sales__list-button button js-anchor" anchor-to="feedback">Купить</button>
+            </li>
+            <li class="top-sales__list-item sales">
+                <div class="top-sales__list-img-wrapper">
+                    <picture>
+                        <source
+                                srcset="images/top-sales-img-4.png 1x, ../images/top-sales-img-4@2x.png 2x"
+                        />
+                        <img
+                                src="images/top-sales-img-4.png"
+                                alt="Фотография модели кроссовок"
+                                width="296"
+                                class="top-sales__list-img"
+                        />
+                    </picture>
+                </div>
+                <h3 class="top-sales__list-title">Adventure Companion</h3>
+                <p class="top-sales__list-price">35.000 ₽</p>
+                <button class="top-sales__list-button button js-anchor" anchor-to="feedback">Купить</button>
+            </li>
+        </ul>
     </div>
 </section>
 <section class="discount">
     <div class="discount__container container">
-
+        <div class="discount__content">
+            <div class="discount__content-item">
+                <p class="discount__title">90%</p>
+                <p class="discount__text">Успейте получить скидку!</p>
+            </div>
+            <div class="discount__content-item">
+                <p class="discount__subtitle">Предложение месяца</p>
+                <p class="discount__text">Кроссовки, которые изменят вашу жизнь! Удобство, стиль и поддержка — все в
+                    одном. Не упустите шанс обновить свою обувь!</p>
+                <button class="discount__button button">Получить скидку</button>
+            </div>
+        </div>
     </div>
 </section>
 <section class="reviews">
     <div class="reviews__container container">
-
+        <h2 class="reviews__title section-title">Наши благодарные клиенты</h2>
+        <p class="reviews__subtitle section-subtitle">И их самые честные, непроплаченные отзывы</p>
+        <ul class="reviews__list">
+            <li class="reviews__list-item">
+                <picture>
+                    <source
+                            srcset="images/reviews-img-1.png 1x, ../images/reviews-img-1@2x.png 2x"
+                    />
+                    <img
+                            src="images/reviews-img-1.png"
+                            alt="Фотография клиента"
+                            width="98"
+                            class="reviews__list-img"
+                    />
+                </picture>
+                <p class="reviews__list-text">С этими кроссовками я могу проводить часы на ногах и не чувствовать
+                    усталости. Рекомендую всем!</p>
+                <p class="reviews__list-name">Сергей, Санкт-Петербург</p>
+            </li>
+            <li class="reviews__list-item">
+                <picture>
+                    <source
+                            srcset="images/reviews-img-2.png 1x, ../images/reviews-img-2@2x.png 2x"
+                    />
+                    <img
+                            src="images/reviews-img-2.png"
+                            alt="Фотография клиента"
+                            width="98"
+                            class="reviews__list-img"
+                    />
+                </picture>
+                <p class="reviews__list-text">Эти кроссовки изменили мою жизнь! Они идеально подходят для тренировок</p>
+                <p class="reviews__list-name">Анна, Москва</p>
+            </li>
+            <li class="reviews__list-item">
+                <picture>
+                    <source
+                            srcset="images/reviews-img-3.png 1x, ../images/reviews-img-3@2x.png 2x"
+                    />
+                    <img
+                            src="images/reviews-img-3.png"
+                            alt="Фотография клиента"
+                            width="98"
+                            class="reviews__list-img"
+                    />
+                </picture>
+                <p class="reviews__list-text">Купив эти кроссовки, я ощутила настоящий прорыв в своем фитнесе! Они
+                    легкие, дышащие и невероятно удобные!</p>
+                <p class="reviews__list-name">Ирина, Казань</p>
+            </li>
+        </ul>
     </div>
 </section>
-<section class="feedback">
+<section class="feedback" id="feedback">
     <div class="feedback__container container">
-
+        <div class="feedback__content">
+            <div class="feedback__content-item">
+                <picture>
+                    <source
+                            srcset="images/feedback-img.png 1x, ../images/feedback-img@2x.png 2x"
+                    />
+                    <img
+                            src="images/feedback-img.png"
+                            alt="Декоративная картинка"
+                            width="627"
+                            class="feedback__img"
+                    />
+                </picture>
+            </div>
+            <div class="feedback__content-item">
+                <h2 class="feedback__title">Заполните форму для получения скидки</h2>
+                <p class="feedback__subtitle">До приобретения заветных кроссовок остался один шаг!</p>
+                <form class="feedback__form form">
+                    <div class="feedback__form-item form__item required">
+                        <label for="name" class="feedback__form-label form__label">Имя</label>
+                        <input id="name" class="feedback__form-input form__input" type="text"/>
+                    </div>
+                    <div class="feedback__form-item form__item required">
+                        <label for="email" class="feedback__form-label form__label">Email</label>
+                        <input id="email" class="feedback__form-input form__input" type="text"/>
+                    </div>
+                    <div class="feedback__form-item form__item required">
+                        <label for="model" class="feedback__form-label form__label">Желаемая модель</label>
+                        <input id="model" class="feedback__form-input form__input" type="text"/>
+                    </div>
+                    <div class="feedback__form-item form__item">
+                        <label for="text" class="feedback__form-label form__label">Ваши пожелания</label>
+                        <textarea id="text" class="feedback__form-input form__textarea"></textarea>
+                    </div>
+                    <button class="feedback__form-button form__button button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
-<footer>
+<footer class="footer">
     <div class="footer__container container">
-
+        <p class="footer__text">© 2024, Курсовая работа</p>
     </div>
 </footer>
 <script type="module" src="js/main.js"></script>

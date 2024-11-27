@@ -1,0 +1,33 @@
+.feedback {
+    margin: 85px 0;
+}
+
+.feedback__content {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.feedback__content-item:nth-child(even) {
+    margin-left: 40px;
+    flex: auto;
+}
+
+.feedback__title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+}
+
+.feedback__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+    margin: 36px 0 70px;
+}
+
+.feedback__form-button {
+    margin-top: 18px;
+    padding: 10px 20px;
+}
