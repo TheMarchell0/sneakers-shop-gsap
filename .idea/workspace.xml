@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68267882-9109-4f2a-b95a-4e6e2d1c13b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/UI/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/functions/createModalFunctional.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions/createFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createFormValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions/createGsapAnimations.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createGsapAnimations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/discount.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/discount.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/feedback.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/feedback.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/models.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/models.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/reviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/reviews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/main/top-sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/main/top-sales.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
       <updated>1732140335156</updated>
       <workItem from="1732140336442" duration="449000" />
       <workItem from="1732145073297" duration="9000" />
-      <workItem from="1732655256480" duration="20256000" />
+      <workItem from="1732655256480" duration="24041000" />
     </task>
     <servers />
   </component>

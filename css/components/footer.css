@@ -8,3 +8,10 @@
     width: fit-content;
     padding: 40px 0;
 }
+
+@media (max-width: 767px) {
+    .footer__text {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+}

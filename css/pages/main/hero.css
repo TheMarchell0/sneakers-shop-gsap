@@ -34,3 +34,47 @@
     top: 130px;
     right: 199px;
 }
+
+@media (max-width: 1919px) {
+    .hero__img {
+        max-width: 500px;
+        width: 100%;
+        right: 52px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero__content {
+        padding: 101px 0 284px;
+        margin: 0 0 10px 50px;
+    }
+    .hero__title {
+        font-size: 35px;
+    }
+
+    .hero__img {
+        top: 410px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero__content {
+        padding: 50px 0 250px;
+        margin: 0;
+    }
+
+    .hero__title {
+        font-size: 22px;
+    }
+
+    .hero__img {
+        top: 513px;
+        max-width: 320px;
+    }
+
+    .hero__button {
+        margin: 0 auto;
+        padding: 20px;
+    }
+}

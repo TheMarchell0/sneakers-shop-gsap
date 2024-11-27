@@ -37,3 +37,27 @@
     margin: 21px 0 10px;
     text-align: center;
 }
+
+@media (max-width: 1440px) {
+    .reviews__list {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+    }
+
+    .reviews__list-item {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .reviews__list-item {
+        flex: 0 0 300px;
+        padding: 20px;
+    }
+
+    .reviews__list-text {
+        margin: 21px 0;
+    }
+}

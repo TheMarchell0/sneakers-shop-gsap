@@ -31,3 +31,45 @@
     margin-top: 18px;
     padding: 10px 20px;
 }
+
+.feedback__img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media (max-width: 1440px) {
+    .feedback__content-item:nth-child(1) {
+        flex: 0 0 34%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .feedback__content {
+        flex-direction: column;
+    }
+
+    .feedback__content-item:nth-child(1) {
+        flex: initial;
+    }
+
+    .feedback__content-item:nth-child(even) {
+        margin-top: 50px;
+        margin-left: initial;
+    }
+
+    .feedback__img {
+        object-position: 0 -120px;
+        height: 300px;
+    }
+
+    .feedback__subtitle {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback__img {
+        object-position:initial;
+    }
+}
