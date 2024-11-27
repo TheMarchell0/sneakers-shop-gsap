@@ -24,22 +24,26 @@ export function createGsapAnimations() {
     gsap.from(".hero__img", {
         scrollTrigger: heroTrigger,
         opacity: 0,
-        x: 100,
+        y: 100,
         delay: 0.5
     });
 
     /*Description*/
 
-    gsap.from(".description__content-item:nth-child(1)", {
+    gsap.from(".description__content", {
         scrollTrigger: descriptionTrigger,
         opacity: 0,
-        x: -100
+    });
+
+    gsap.from(".description__content-item:nth-child(1)", {
+        scrollTrigger: descriptionTrigger,
+        y: 100
     });
 
     gsap.from(".description__content-item:nth-child(2)", {
         scrollTrigger: descriptionTrigger,
-        opacity: 0,
-        x: 100
+        y: 160,
+        duration: 1.6,
     });
 
     /*Models*/
@@ -60,8 +64,9 @@ export function createGsapAnimations() {
     gsap.from(".models__list-item", {
         scrollTrigger: modelsTrigger,
         opacity: 0,
-        y: 50,
-        stagger: 0.2,
+        x: 50,
+        stagger: 0.6,
+        delay: 0.8,
     });
 
     /*Top-sales*/
@@ -82,8 +87,9 @@ export function createGsapAnimations() {
     gsap.from(".top-sales__list-item", {
         scrollTrigger: topSalesTrigger,
         opacity: 0,
-        y: 100,
-        stagger: 0.2,
+        x: 50,
+        stagger: 0.4,
+        delay: 0.5,
     });
 
     /*Discount*/
@@ -91,6 +97,7 @@ export function createGsapAnimations() {
     gsap.from(".discount__content", {
         scrollTrigger: discountTrigger,
         opacity: 0,
+        y: 60,
     });
 
     gsap.from(".discount__title", {

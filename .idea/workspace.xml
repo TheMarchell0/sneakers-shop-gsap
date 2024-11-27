@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68267882-9109-4f2a-b95a-4e6e2d1c13b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/UI/preloader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/functions/createGsapAnimations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/functions/createPreloaderFunctional.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/UI/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions/createFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createFormValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/UI/preloader.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/UI/preloader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/functions/createGsapAnimations.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createGsapAnimations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/functions/createPreloaderFunctional.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions/createPreloaderFunctional.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/SashaWork/chukotka-rating",
+    "last_opened_file_path": "D:/SashaWork/beyond-reality",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -49,7 +44,7 @@
       <updated>1732140335156</updated>
       <workItem from="1732140336442" duration="449000" />
       <workItem from="1732145073297" duration="9000" />
-      <workItem from="1732655256480" duration="17970000" />
+      <workItem from="1732655256480" duration="18631000" />
     </task>
     <servers />
   </component>
