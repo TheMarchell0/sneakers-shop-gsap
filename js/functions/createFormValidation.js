@@ -1,5 +1,26 @@
 export function createFormValidation() {
+    const body = document.body;
     const forms = document.querySelectorAll('.js-form');
+    const successModal = document.querySelector('.js-modal');
+    const closeButtons = successModal.querySelectorAll('.js-close-modal');
+
+    closeButtons.forEach(closeButton => {
+        closeButton.addEventListener('click', () => {
+            closeModal()
+        });
+    });
+
+    successModal.addEventListener('click', (event) => {
+        if (event.target === successModal) {
+            closeModal();
+        }
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && successModal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 
     forms.forEach(form => {
         const inputs = form.querySelectorAll('.js-form-item');
@@ -59,7 +80,7 @@ export function createFormValidation() {
         });
 
         if (allValid) {
-            alert('Добавь модалку!!');
+            openModal();
             clearFormFields(inputs);
         }
     }
@@ -74,5 +95,32 @@ export function createFormValidation() {
                 label.classList.remove('active');
             }
         });
+    }
+
+    function openModal() {
+        successModal.classList.add('active', 'modal-anim-open');
+        lockScroll();
+        successModal.classList.remove('modal-anim-close');
+    }
+
+    function closeModal(m) {
+        if (successModal) {
+            successModal.classList.replace('modal-anim-open', 'modal-anim-close');
+            successModal.addEventListener('animationend', () => {
+                successModal.classList.remove('active', 'modal-anim-close');
+                unlockScroll();
+            }, {once: true});
+        }
+    }
+
+    function lockScroll() {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        body.style.paddingRight = `${scrollbarWidth}px`;
+        body.classList.add('no-scroll');
+    }
+
+    function unlockScroll() {
+        body.style.paddingRight = '';
+        body.classList.remove('no-scroll');
     }
 }

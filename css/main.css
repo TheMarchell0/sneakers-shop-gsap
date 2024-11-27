@@ -9,6 +9,7 @@
 @import "UI/preloader.css";
 @import "UI/button.css";
 @import "UI/form.css";
+@import "UI/modal.css";
 
 /*Main page styles*/
 @import "pages/main/hero.css";

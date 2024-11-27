@@ -1,0 +1,119 @@
+.modal {
+    position: fixed;
+    z-index: -10;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.20);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.modal.active {
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__wrapper {
+    border-radius: 48px;
+    background: #FFFFFF;
+    color: #323232;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    padding: 82px 50px;
+    overflow-y: auto;
+    max-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0px 17px 37px 0px #0000001A,
+    0px 66px 66px 0px #00000017,
+    0px 149px 90px 0px #0000000D,
+    0px 266px 106px 0px #00000003,
+    0px 415px 116px 0px #00000000;
+}
+
+.modal__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    z-index: 10;
+    pointer-events: initial;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.modal__close:hover {
+    opacity: 0.7;
+}
+
+.modal-anim-open {
+    -webkit-animation: openModalAnim 0.3s ease forwards;
+    animation: openModalAnim 0.3s ease forwards;
+}
+
+.modal-anim-close {
+    -webkit-animation: closeModalAnim 0.3s ease forwards;
+    animation: closeModalAnim 0.3s ease forwards;
+}
+
+.modal__title {
+    text-align: center;
+}
+
+.modal__button {
+    margin: 60px auto 0;
+    padding: 20px 60px;
+}
+
+@-webkit-keyframes openModalAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes openModalAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes closeModalAnim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes closeModalAnim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

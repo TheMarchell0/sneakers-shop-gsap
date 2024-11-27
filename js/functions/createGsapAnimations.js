@@ -66,7 +66,7 @@ export function createGsapAnimations() {
         opacity: 0,
         x: 50,
         stagger: 0.6,
-        delay: 0.8,
+        delay: 0.4,
     });
 
     /*Top-sales*/
@@ -109,14 +109,14 @@ export function createGsapAnimations() {
 
     gsap.from(".discount__subtitle", {
         scrollTrigger: discountTrigger,
-        y: 20,
+        x: 40,
         opacity: 0,
         delay: 0.7,
     });
 
     gsap.from(".discount__content-item:nth-child(2) .discount__text", {
         scrollTrigger: discountTrigger,
-        y: 20,
+        x: 20,
         opacity: 0,
         delay: 0.9,
     });
@@ -130,7 +130,7 @@ export function createGsapAnimations() {
 
     gsap.from(".discount__content-item:nth-child(1) .discount__text", {
         scrollTrigger: discountTrigger,
-        y: 20,
+        y: -20,
         opacity: 0,
         delay: 1.5,
     });
@@ -153,8 +153,8 @@ export function createGsapAnimations() {
     gsap.from(".reviews__list-item", {
         scrollTrigger: reviewsTrigger,
         opacity: 0,
-        y: 100,
-        stagger: 0.2,
+        y: -100,
+        stagger: 0.4,
     });
 
     /*Feedback*/

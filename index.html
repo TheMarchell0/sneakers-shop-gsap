@@ -85,7 +85,8 @@
                     />
                 </picture>
                 <h2 class="description__title white">Скидка 25 %!</h2>
-                <p class="description__subtitle white">Не упустите шанс обновить свой гардероб по&nbsp;выгодной цене!</p>
+                <p class="description__subtitle white">Не упустите шанс обновить свой гардероб по&nbsp;выгодной
+                    цене!</p>
                 <button class="description__button button js-anchor" anchor-to="feedback">Получить скидку</button>
             </div>
         </div>
@@ -347,7 +348,9 @@
                         <label for="text" class="feedback__form-label form__label">Ваши пожелания</label>
                         <textarea id="text" class="feedback__form-input form__textarea js-input"></textarea>
                     </div>
-                    <button class="feedback__form-button form__button button js-submit-button" type="submit">Отправить</button>
+                    <button class="feedback__form-button form__button button js-submit-button js-modal-trigger"
+                            data-open-modal="form-success-modal" type="submit">Отправить
+                    </button>
                 </form>
             </div>
         </div>
@@ -355,7 +358,8 @@
 </section>
 <footer class="footer">
     <div class="footer__container container">
-        <p class="footer__text">© 2024, Курсовая работа "Разработка одностраничного сайта, направленного на привлечение внимания и мотивацию на оформление заказа/покупки товара определенной категории"</p>
+        <p class="footer__text">© 2024, Курсовая работа "Разработка одностраничного сайта, направленного на привлечение
+            внимания и мотивацию на оформление заказа/покупки товара определенной категории"</p>
     </div>
 </footer>
 <div class="preloader js-preloader">
@@ -365,6 +369,13 @@
             class="preloader__img"
     />
     <div class="preloader__spin"></div>
+</div>
+<div id="form-success-modal" class="modal js-modal">
+    <div class="modal__wrapper">
+        <span class="modal__close js-close-modal">X</span>
+        <p class="modal__title section-title">Ваше заказ успешно зарегистрирован!</p>
+        <button class="modal__button button js-close-modal">Замечательно</button>
+    </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
