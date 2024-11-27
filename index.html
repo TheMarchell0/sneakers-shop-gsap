@@ -13,7 +13,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/main.css"/>
 </head>
-<body>
+<body class="no-scroll">
 <header class="header">
     <div class="header__container container">
         <img
@@ -328,26 +328,26 @@
                 </picture>
             </div>
             <div class="feedback__content-item">
-                <h2 class="feedback__title">Заполните форму для получения скидки</h2>
-                <p class="feedback__subtitle">До приобретения заветных кроссовок остался один шаг!</p>
-                <form class="feedback__form form">
-                    <div class="feedback__form-item form__item required">
+                <h2 class="feedback__title">Заполните форму для оформления заказа</h2>
+                <p class="feedback__subtitle">Вы получите скидку, сделав заказ через эту форму!</p>
+                <form class="feedback__form form js-form">
+                    <div class="feedback__form-item form__item required js-form-item">
                         <label for="name" class="feedback__form-label form__label">Имя</label>
-                        <input id="name" class="feedback__form-input form__input" type="text"/>
+                        <input id="name" class="feedback__form-input form__input js-input" type="text"/>
                     </div>
-                    <div class="feedback__form-item form__item required">
+                    <div class="feedback__form-item form__item required js-form-item js-email-input">
                         <label for="email" class="feedback__form-label form__label">Email</label>
-                        <input id="email" class="feedback__form-input form__input" type="text"/>
+                        <input id="email" class="feedback__form-input form__input js-input" type="text"/>
                     </div>
-                    <div class="feedback__form-item form__item required">
+                    <div class="feedback__form-item form__item required js-form-item">
                         <label for="model" class="feedback__form-label form__label">Желаемая модель</label>
-                        <input id="model" class="feedback__form-input form__input" type="text"/>
+                        <input id="model" class="feedback__form-input form__input js-input" type="text"/>
                     </div>
-                    <div class="feedback__form-item form__item">
+                    <div class="feedback__form-item form__item js-form-item">
                         <label for="text" class="feedback__form-label form__label">Ваши пожелания</label>
-                        <textarea id="text" class="feedback__form-input form__textarea"></textarea>
+                        <textarea id="text" class="feedback__form-input form__textarea js-input"></textarea>
                     </div>
-                    <button class="feedback__form-button form__button button" type="submit">Отправить</button>
+                    <button class="feedback__form-button form__button button js-submit-button" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
@@ -355,9 +355,19 @@
 </section>
 <footer class="footer">
     <div class="footer__container container">
-        <p class="footer__text">© 2024, Курсовая работа</p>
+        <p class="footer__text">© 2024, Курсовая работа "Разработка одностраничного сайта, направленного на привлечение внимания и мотивацию на оформление заказа/покупки товара определенной категории"</p>
     </div>
 </footer>
+<div class="preloader js-preloader">
+    <img
+            src="images/logo.svg"
+            alt="Логотип"
+            class="preloader__img"
+    />
+    <div class="preloader__spin"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

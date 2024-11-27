@@ -6,6 +6,7 @@
 @import "components/footer.css";
 
 /*UI styles*/
+@import "UI/preloader.css";
 @import "UI/button.css";
 @import "UI/form.css";
 
@@ -74,6 +75,10 @@ img {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .container {

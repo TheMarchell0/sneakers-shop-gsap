@@ -3,12 +3,17 @@
     flex-direction: column;
 }
 
+.form__item {
+    position: relative;
+}
+
 .form__item:not(:last-of-type) {
     margin-bottom: 40px;
 }
 
 .form__label,
-.form__input {
+.form__input,
+.form__textarea {
     font-weight: 700;
     font-size: 18px;
     color: #000;
@@ -16,12 +21,13 @@
 
 .form__label {
     display: block;
+    width: fit-content;
     margin-bottom: 8px;
 }
 
 .form__input,
 .form__textarea {
-    border: 2px solid var(--red);
+    border: 2px solid var(--gray);
     outline: none;
     appearance: none;
     width: 100%;
@@ -31,4 +37,53 @@
 .form__textarea {
     resize: none;
     min-height: 120px;
+}
+
+.form__item.required::after {
+    content: 'Обязательное поле';
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+}
+
+
+.form__item.error::after {
+    opacity: 1;
+}
+
+.form__item.error .form__label,
+.form__item.error .form__input {
+    color: var(--red);
+}
+
+.form__item.error .form__input,
+.form__item.error .form__textarea {
+    border: 2px solid var(--red);
+}
+
+.form__item.email-error::after {
+    content: 'Некорректный email';
+}
+
+.required .form__label {
+    position: relative;
+}
+
+.required .form__label::before {
+    content: '*';
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    color: #c30000;
+    font-size: 24px;
+    z-index: 10;
 }

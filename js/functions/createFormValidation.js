@@ -1,100 +1,78 @@
 export function createFormValidation() {
-    console.log(1)
-    /*const forms = document.querySelectorAll('.js-form');
+    const forms = document.querySelectorAll('.js-form');
 
     forms.forEach(form => {
-        const inputs = form.querySelectorAll('.js-input-wrapper');
+        const inputs = form.querySelectorAll('.js-form-item');
         const submitButton = form.querySelector('.js-submit-button');
 
-        inputs.forEach(input => {
+        inputs.forEach((input) => {
             const field = input.querySelector('.js-input');
 
-            field.addEventListener('input', () => validateInput(input));
+            field.addEventListener('input', () => {
+                validateInput(input);
+            });
+
             field.addEventListener('change', () => {
                 field.classList.add('touched');
-                validateInput(input);
             });
         });
 
         submitButton.addEventListener('click', (e) => {
             e.preventDefault();
-            validateAllInputs(inputs);
+
+            inputs.forEach(input => {
+                validateInput(input);
+            });
+
             checkAllFieldsValid(inputs);
         });
-    });*/
-}
-
-function validateInput(input) {
-    const field = input.querySelector('.js-input');
-    const value = field.value.trim();
-    const isRequired = input.classList.contains('required');
-    const inputType = input.getAttribute('data-input-type');
-    const isEmpty = inputType === 'select' ? value === 'Не выбран' : value === '';
-
-    clearErrorClasses(input);
-
-    if (isEmpty && isRequired) {
-        input.classList.add('error');
-    } else {
-        field.classList.add('touched');
-        handleInputValidation(input, inputType, value);
-    }
-}
-
-function clearErrorClasses(input) {
-    input.classList.remove('error', 'email-error', 'phone-error', 'rules-error');
-}
-
-function handleInputValidation(input, inputType, value) {
-    const field = input.querySelector('.js-input');
-
-    if (inputType === 'firstLetterUppercase') {
-        const newValue = firstLetterUppercase(value);
-
-        if (newValue !== value) {
-            field.value = newValue;
-        }
-    }
-
-    const validationRules = {
-        organizationName: validateOrganizationName,
-        localityName: validateLocalityName,
-        email: validateEmail,
-        phone: (val) => validatePhone(val, field.classList.contains('js-city-phone-number')),
-    };
-
-    const validate = validationRules[inputType];
-
-    if (validate && !validate(value)) {
-        input.classList.add('error', 'rules-error');
-    }
-}
-
-
-function validateAllInputs(inputs) {
-    inputs.forEach(input => validateInput(input));
-}
-
-function checkAllFieldsValid(inputs) {
-    const allValid = Array.from(inputs).every(input => !input.classList.contains('error'));
-
-    if (allValid) {
-        // TODO: Здесь доделать функционал отправки формы в Битрикс. Убрать alert ниже.
-        alert('Функционал отправки формы находится в разработке.');
-        clearFormFields(inputs);
-    }
-}
-
-function clearFormFields(inputs) {
-    inputs.forEach(input => {
-        const field = input.querySelector('.js-input');
-        const label = input.querySelector('.label');
-        field.value = '';
-        field.classList.remove('touched');
-        if (label && label.classList.contains('active')) {
-            label.classList.remove('active')
-        }
     });
-    clearMarkRadio();
-    clearSelect();
+
+    function validateEmail(email) {
+        const emailRegex = /\S+@\S+\.\S+/;
+        return emailRegex.test(email);
+    }
+
+    function validateInput(input) {
+        const isEmailField = input.classList.contains('js-email-input');
+        const field = input.querySelector('.js-input');
+        const isRequired = input.classList.contains('required');
+        const value = field.value.trim();
+        const isEmpty = value === '';
+
+        input.classList.remove('error', 'email-error');
+
+        if (isEmpty && isRequired) {
+            input.classList.add('error');
+        } else {
+            field.classList.add('touched');
+
+            if (isEmailField && !validateEmail(value)) {
+                input.classList.add('error', 'email-error');
+            }
+        }
+    }
+
+    function checkAllFieldsValid(inputs) {
+        let allValid = Array.from(inputs).every((input) => {
+            return !input.classList.contains('error') && !input.classList.contains('email-error');
+        });
+
+        if (allValid) {
+            alert('Добавь модалку!!');
+            clearFormFields(inputs);
+        }
+    }
+
+    function clearFormFields(inputs) {
+        inputs.forEach(input => {
+            const field = input.querySelector('.js-input');
+            const label = input.querySelector('.label');
+            field.value = '';
+            field.classList.remove('touched');
+            if (label && label.classList.contains('active')) {
+                label.classList.remove('active');
+            }
+        });
+    }
 }
